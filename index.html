@@ -113,6 +113,79 @@
             </div>
         </section>
 
+        
+        <section class="container">
+            <hr>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h3 class="text-center">Registro de mercancia en cuarto de soluciones: </h3>
+
+                    <form class="p-5 shadow border rounded my-5">
+
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Volumen:</label>
+                                <input type="number" class="form-control" id="volumenmercancia">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Peso:</label>
+                                <input type="number" class="form-control" id="pesomercancia">
+                            </div>
+                        </div>
+
+
+                        <div class="row my-4">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombremercancia">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Tipo Destinatario:</label>
+                                <input type="text" class="form-control" id="tipodestinatariomercancia">
+                            </div>
+                        </div>
+
+                        <div class="row my-4">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Departamento:</label>
+                                <input type="text" class="form-control" id="departamentomercancia">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Ciudad:</label>
+                                <input type="text" class="form-control" id="ciudadmercancia">
+                            </div>
+                        </div>
+
+                        <div class="row my-4">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Nombre Destinatario:</label>
+                                <input type="text" class="form-control" id="nombredestinatariomercancia">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Dirección:</label>
+                                <input type="text" class="form-control" id="direccionmercancia">
+                            </div>
+                        </div>
+
+                        <div class="row my-4">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Fecha Ingreso:</label>
+                                <input type="date" class="form-control" id="fechaingresomercancia">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label class="form-label">Fecha Salida:</label>
+                                <input type="date" class="form-control" id="fechasalidamercancia">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-warning w-100" type="submit" id="botonmercancia">Registrar Mercancia</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer class="container-fluid g-0 bg-dark p-5">
           <div class="row justify-content-center text-white">
@@ -131,5 +204,7 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./src/controllers/controladormercancia.js"></script>
 </body>
 </html>
