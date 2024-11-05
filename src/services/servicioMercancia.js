@@ -7,14 +7,13 @@ export async function registrarMercancia(datosMercancia){
     let peticion={
         method:"POST",
         headers:{"Content-Type":"application/json"},
-        body:datosMercancia
+        body:JSON.stringify(datosMercancia)
     }
 
     //3. ARRANQUE PS OME // LLAMO A LA PROMESA FETCH
     let respuestaServidor=await fetch(URL,peticion)
-
     let respuestaFinal=await respuestaServidor.json()
-
-    return respuestaFinal
+    console.log(respuestaFinal)
+    //return respuestaFinal
 
 }
